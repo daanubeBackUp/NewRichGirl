@@ -13,58 +13,58 @@
 
 #headerSection {
     background: linear-gradient(to bottom, #070055, #1b0a3f, #291757, #6d3ca6, #fff)!important;
-    /* background-image: url("../images/bg/homeBottomShape.webp");
-    height: 23.3rem;
-    background-position: bottom;
-    background-position-y: center;
-    padding: 0;
-    margin: 0;
-    display: flex; */
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
     grid-area: headerSection;
 }
 
+#logo {
+    background-image: url("../images/logos/logoLaRicachona.webp");
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
 #Ricachona {
     background-image: url("../images/bg/LaRicachonaBG.webp");
     background-position-y: bottom;
     background-position-x: right;
-}
-.logoRica {
-    display: block;
-    position: absolute;
-    top: 50%;
-    width: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.scroll-down {
-    margin-top: 100px;
-}
-.creative-shape {
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+    height: 100vh;
     width: 100%;
-    height: auto;
-    z-index: -1;
+    z-index: 90;
+    background-repeat: no-repeat;
+    position: absolute;
 }
 #waves {
-    background-image: url("../images/bg/homeBottomShape.webp");
-}
-.header-overlay {
-    width: 100%;
-    height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 63vh;
+    background-image: url("../images/bg/homeBottomShape.webp");
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    z-index: 70;
+    bottom: 0;
+}
+#goDown {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    background-color: #33c;
+    border: 2px solid #33c;
+    z-index: 100;
+    bottom: 0.5rem;
+    left: 50%;
+    border-radius: 100%;
+    text-align: center;
+    align-content: space-around;
 }
 
 .header-container {
-    padding: 45px 0 75px;
+    height: 100vh;
+    position: RELATIVE;
+    width: 100%;
 }
 
 #bodySection {
@@ -82,4 +82,5 @@
     /* margin: 0 auto; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    height: 10rem;
 }
