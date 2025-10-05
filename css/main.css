@@ -1,0 +1,85 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+#sectionGrid {
+    display: grid;
+    grid-template-areas: 
+        "headerSection"
+        "bodySection";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#headerSection {
+    background: linear-gradient(to bottom, #070055, #1b0a3f, #291757, #6d3ca6, #fff)!important;
+    /* background-image: url("../images/bg/homeBottomShape.webp");
+    height: 23.3rem;
+    background-position: bottom;
+    background-position-y: center;
+    padding: 0;
+    margin: 0;
+    display: flex; */
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    grid-area: headerSection;
+}
+
+#Ricachona {
+    background-image: url("../images/bg/LaRicachonaBG.webp");
+    background-position-y: bottom;
+    background-position-x: right;
+}
+.logoRica {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.scroll-down {
+    margin-top: 100px;
+}
+.creative-shape {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+#waves {
+    background-image: url("../images/bg/homeBottomShape.webp");
+}
+.header-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-container {
+    padding: 45px 0 75px;
+}
+
+#bodySection {
+    grid-area: bodySection;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-areas: 
+        "gameModeSection"
+        "tripleModeSection" 
+        "animalsModeSection"
+        "contactSection"
+        "footerSection";
+    gap: 10px;
+    width: 100%;
+    /* margin: 0 auto; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
