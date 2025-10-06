@@ -1,38 +1,35 @@
-Swal.fire({
-                title: "¡Importante!",
-                text: "Este es un sitio web de resultados de apuestas, debe ser mayor de edad para poder entrar.",
-                imageUrl: "images/logos/LogoLagra.webp",
-                imageWidth: 200,
-                imageHeight: 200,
-                imageAlt: "La Granjita",
-                confirmButtonText: "Confirmo, tengo +18 años",
-                showCloseButton: false,
-                allowEscapeKey: false,
-                allowOutsideClick: false
-            });
+// Verificar si el usuario ya ha confirmado la edad.
+if (localStorage.getItem('ageVerified') !== 'true') {
+    // Swal.fire({
+    //     title: "¡Importante!",
+    //     html: `
+    //         <img src="/images/logos/logoLaRicachona.webp" alt="La Granjita" style="width: 180px; height: 180px; margin-bottom: 15px;">
+    //         <p>Este es un sitio web de resultados de apuestas, debe ser mayor de edad para poder entrar.</p>
+    //     `,
+    //     confirmButtonText: "Confirmo, tengo +18 años",
+    //     showCloseButton: false,
+    //     allowEscapeKey: false,
+    //     allowOutsideClick: false,
+    //     customClass: {
+    //         confirmButton: 'btn btn-success' // Clase de Bootstrap para el botón
+    //     },
+    //     buttonsStyling: false
+    // }).then((result) => {
+    //     if (result.isConfirmed) {
+    //         // Guardar la confirmación en el almacenamiento local.
+    //         localStorage.setItem('ageVerified', 'true');
+    //     }
+    // });
+}
 
-            $('#lotterydate').datepicker({
-                language: 'es-ES',
-                autoclose: true,
-                endDate: new Date().toLocaleString(),
-                todayHighlight: true,
-                todayBtn: "linked"
-            });
-            $('#lotterydate').datepicker("setDate", new Date().toLocaleString());
-            $('#lotterydate').datepicker()
-                .on('changeDate', function(e) {
-                    Swal.fire({
-                        title: "¡Fecha!",
-                        text: e.date.toLocaleString(),
-                        confirmButtonText: "Ok"
-                    });
-            });
+date.max = new Date().toISOString().split("T")[0];
+document.getElementById('date').valueAsDate = new Date();
 
-            window.onscroll = () => {
-                if(pageYOffset  >= 1000){
-                    document.getElementById('goUp').style.visibility="visible"
-                } else {
-                    document.getElementById('goUp').style.visibility="hidden";
-                }
-            };
+window.onscroll = () => {
+    if(pageYOffset  >= 1000){
+        document.getElementById('goUp').style.visibility="visible"
+    } else {
+        document.getElementById('goUp').style.visibility="hidden";
+    }
+};
         
