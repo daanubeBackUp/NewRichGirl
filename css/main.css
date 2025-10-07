@@ -91,7 +91,7 @@
 }
 .header-container {
     height: 100vh;
-    position: RELATIVE;
+    position: relative;
     width: 100%;
 }
 
@@ -150,7 +150,6 @@
 }
 #buttonGroup a {
     flex-grow: 2;
-    height: 2rem;
     background-color: var(--btnBaseColor);
     height: 60px;
     line-height: 60px;
@@ -340,4 +339,424 @@ form {
 }
 #footerSection figure:last-child{
     height: 10rem;
+}
+/* ******************************************************************************************** */
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 320px) {
+    html {background-color: red;}
+    #waves {
+        display: none;
+    }
+    #Ricachona {
+        display: none;
+    }
+    #logo {
+        margin: 0 auto;
+        width: 10rem;
+        height: 20rem;
+        display: flex;
+        position: relative;
+        background-size: contain;
+    }
+    .header-container {
+        height: 37vh;
+    }
+    #gameModeSection {
+        margin: 0;
+        width: 100%;
+    }
+    #gameModeTitle {
+        width: 100%;
+    } 
+    #gameModeTitle h3 {
+        margin: 2rem auto 1rem auto;
+    }   
+    #gameModeDateTitle h5 {
+        font-size: 1rem;
+        text-align: center;   
+    }
+    .tripleModeSection,
+    .animalsModeSection {
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: 1fr;
+    }
+    #footerSection {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #footerSection figure:first-child{
+        width: auto;
+        margin: 0;
+    }
+    #footerSection figure:last-child{
+        height: 5rem;
+    }
+    #goUp {
+        right: 1rem;
+        bottom: 1rem;
+    }
+    #goDown {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        left: unset;
+        bottom: unset;
+        margin-top: -3rem;
+        text-decoration: none;
+    }
+    form {
+        flex-direction: column;
+    }
+    #buttonGroup {
+        margin: 0;
+    }
+    
+    .articleSection section {
+        width: 100%;
+    }
+    .sectionTitle {
+        margin: 3rem auto !important
+    }
+    .tripleResultArticle,
+    .animalsResultArticle {
+        height: 15rem;
+        margin-top: 0;
+    }
+    .tripleResultArticle p {
+        margin: 0;
+        font-size: 30px;
+    }
+    .sectionTitle {
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    #logo {
+        margin: 0 auto;
+        width: 20rem;
+        height: 30rem;
+        display: flex;
+        position: relative;
+        background-size: contain;
+    }
+    .header-container {
+        height: auto;
+    }
+    #goDown {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        left: unset;
+        bottom: unset;
+        margin-top: -4rem;
+        text-decoration: none;
+    }
+    #gameModeSection {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .articleSection section {
+        width: 100%;
+        margin: 3rem auto !important;
+    }
+    #footerSection {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    #footerSection figure:first-child {
+        width: auto;
+        height: 10rem;
+    }
+    #footerSection figure:last-child {
+        height: 5rem;
+    }
+    form {
+        flex-direction: column;
+    }
+    #gameModeTitle h3 {
+        margin: 2rem auto 1rem auto;
+    }  
+    #gameModeDateTitle h5 {
+        font-size: 1rem;
+        text-align: center;
+    } 
+    .tripleResultArticle, .animalsResultArticle {
+        height: 15rem;
+        margin-top: 0;
+    }
+    .tripleResultArticle p {
+        margin: 0;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .tripleModeSection,
+    .animalsModeSection {
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    #logo {
+        margin: 0 auto;
+        width: 15rem;
+        height: 25rem;
+        display: flex;
+        position: relative;
+        background-size: contain;
+    }
+    .header-container {
+        height: auto;
+    }
+    #goDown {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        left: unset;
+        bottom: unset;
+        margin-top: -4rem;
+        text-decoration: none;
+    }
+    #gameModeSection {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .articleSection section {
+        width: 100%;
+        margin: 3rem auto !important;
+    }
+    #footerSection {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    #footerSection figure:first-child {
+        width: auto;
+        height: 10rem;
+    }
+    #footerSection figure:last-child {
+        height: 5rem;
+    }
+    form {
+        flex-direction: column;
+    }
+    #gameModeTitle h3 {
+        margin: 2rem auto 1rem auto;
+    }  
+    #gameModeDateTitle h5 {
+        font-size: 1rem;
+        text-align: center;
+    } 
+    .tripleResultArticle, .animalsResultArticle {
+        height: 15rem;
+        margin-top: 0;
+        width: 12rem;
+        padding: 15px 15px;
+    }
+    .tripleResultArticle p {
+        margin: 0;
+        font-size: 30px;
+    }
+    .tripleModeSection,
+    .animalsModeSection {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+    #date, #submitBtn, form {
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+    .articleSection section {
+        width: 100%;
+        margin: 1rem auto !important;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #Ricachona {
+        display: none;  
+    }
+    #waves {
+        display: none;  
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .tripleModeSection,
+    .animalsModeSection {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+     #logo {
+        margin: 0 auto;
+        width: 15rem;
+        height: 25rem;
+        display: flex;
+        position: relative;
+        background-size: contain;
+    }
+    .header-container {
+        height: auto;
+    }
+    #goDown {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        left: unset;
+        bottom: unset;
+        margin-top: -4rem;
+        text-decoration: none;
+    }
+    #gameModeSection {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .articleSection section {
+        width: 100%;
+        margin: 3rem auto !important;
+    }
+    #footerSection {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    #footerSection figure:first-child {
+        width: auto;
+        height: 10rem;
+    }
+    #footerSection figure:last-child {
+        height: 5rem;
+    }
+    form {
+        flex-direction: column;
+    }
+    #gameModeTitle h3 {
+        margin: 2rem auto 1rem auto;
+    }  
+    #gameModeDateTitle h5 {
+        font-size: 1rem;
+        text-align: center;
+    } 
+    .tripleResultArticle, .animalsResultArticle {
+        height: 15rem;
+        margin-top: 0;
+        width: 12rem;
+        padding: 15px 15px;
+    }
+    .tripleResultArticle p {
+        margin: 0;
+        font-size: 30px;
+    }
+    #date, #submitBtn, form {
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+    .articleSection section {
+        width: 100%;
+        margin: 1rem auto !important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #Ricachona {
+        display: none;
+    }
+    .tripleModeSection,
+    .animalsModeSection {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+     #logo {
+        margin: 0 auto;
+        width: 15rem;
+        height: 25rem;
+        display: flex;
+        position: relative;
+        background-size: contain;
+    }
+    .header-container {
+        height: auto;
+    }
+    #goDown {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        left: unset;
+        bottom: unset;
+        margin-top: -4rem;
+        text-decoration: none;
+    }
+    #gameModeSection {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .articleSection section {
+        width: 100%;
+        margin: 3rem auto !important;
+    }
+    #footerSection {
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        margin: 0;
+    }
+    #footerSection figure:first-child {
+        width: auto;
+        height: 10rem;
+    }
+    #footerSection figure:last-child {
+        height: 5rem;
+    }
+    form {
+        flex-direction: column;
+    }
+    #gameModeTitle h3 {
+        margin: 2rem auto 1rem auto;
+    }  
+    #gameModeDateTitle h5 {
+        font-size: 1rem;
+        text-align: center;
+    } 
+    .tripleResultArticle, .animalsResultArticle {
+        height: 15rem;
+        margin-top: 0;
+        width: 12rem;
+        padding: 15px 15px;
+    }
+    .tripleResultArticle p {
+        margin: 0;
+        font-size: 30px;
+    }
+    #date, #submitBtn, form, #gameModeSelectors {
+        width: 50%;
+        margin: 0.5rem auto;
+    }
+    .articleSection section {
+        width: 100%;
+    }
+    
 }
