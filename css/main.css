@@ -344,7 +344,6 @@ form {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 320px) {
-    html {background-color: red;}
     #waves {
         display: none;
     }
